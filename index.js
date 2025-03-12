@@ -35,3 +35,23 @@ function exerciseDog(dogName, dogBreed) {
 const weatherToday = "Rainy";
 const result = exerciseDog("Byron", "poodle");
 console.log(result);
+
+
+
+
+
+//I made this 
+function exerciseDog(dogName, dogBreed) {
+  if (weatherToday === "Rainy") {
+    return `${dogName} did not exercise due to rain`;
+  } else if (weatherToday === "Windy") {
+    return `It is too messy for ${dogName}`;
+  } else if (weatherToday === "Sunny") {
+    return `${dogName} is too hot to be outside :)!`;
+  } else {
+    return `${dogName} is happy and tired!`;
+  }
+}
+const weatherToday = "Sunny";
+const result = exerciseDog("Boo", "poodle");
+console.log(result);
